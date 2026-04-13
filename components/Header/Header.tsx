@@ -55,7 +55,7 @@ const Header = () => {
           </div>
         </div>
         {isOpen && (
-          <nav className="flex gap-3 flex-col items-center mt-4">
+          <nav className="flex gap-3 flex-col items-center mt-4 h-screen">
             <Link className="text-gray-800 hover:text-blue-600" href={"/about"}>
               About
             </Link>
