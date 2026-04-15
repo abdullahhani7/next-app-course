@@ -33,7 +33,7 @@ const Header = () => {
             </Link>
           </nav>
           <button
-            className="md:hidden"
+            className="md:hidden "
             onClick={() => setIsOpen((prev) => !prev)}
           >
             {isOpen ? <MdClose /> : <IoMenu />}
@@ -55,7 +55,7 @@ const Header = () => {
           </div>
         </div>
         {isOpen && (
-          <nav className="flex gap-3 flex-col items-center mt-4 h-screen">
+          <nav className="flex gap-3 flex-col items-center mt-4  ">
             <Link className="text-gray-800 hover:text-blue-600" href={"/about"}>
               About
             </Link>
