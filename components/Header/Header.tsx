@@ -16,20 +16,17 @@ const Header = () => {
             <span className="text-2xl text-gray-600 font-bold">WEGO</span>
           </Link>
           <nav className="hidden md:flex space-x-5">
+            <Link className="text-gray-800 hover:text-blue-600" href={"/posts"}>
+              Posts
+            </Link>
             <Link className="text-gray-800 hover:text-blue-600" href={"/about"}>
               About
             </Link>
             <Link
               className="text-gray-800 hover:text-blue-600"
-              href={"/products"}
+              href={"/contact"}
             >
-              Products
-            </Link>
-            <Link
-              className="text-gray-800 hover:text-blue-600"
-              href={"/products/search"}
-            >
-              Search
+              Contact
             </Link>
           </nav>
           <button
@@ -56,20 +53,17 @@ const Header = () => {
         </div>
         {isOpen && (
           <nav className="flex gap-3 flex-col items-center mt-4  ">
+            <Link className="text-gray-800 hover:text-blue-600" href={"/posts"}>
+              Posts
+            </Link>{" "}
             <Link className="text-gray-800 hover:text-blue-600" href={"/about"}>
               About
             </Link>
             <Link
               className="text-gray-800 hover:text-blue-600"
-              href={"/products"}
+              href={"/contact"}
             >
-              Products
-            </Link>
-            <Link
-              className="text-gray-800 hover:text-blue-600"
-              href={"/products/search"}
-            >
-              Search
+              Contact
             </Link>
           </nav>
         )}

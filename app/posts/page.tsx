@@ -1,3 +1,4 @@
+import PostItem from "@/components/PostItem/PostItem";
 import { TPost } from "@/utils/types";
 
 const page = async () => {
@@ -5,17 +6,14 @@ const page = async () => {
   const posts = await res.json();
   console.log("posts", posts);
 
-  if (res.ok) {
+  if (!res.ok) {
     throw new Error("fialed to fetch data");
   }
 
   return (
-    <div className="grid grid-cols-3 gap-7">
+    <div className="flex items-center justify-center flex-wrap gap-7">
       {posts?.posts?.map((post: TPost) => (
-        <div key={post.id} className="bg-amber-200 p-2">
-          <h1 className="bg-red-500">{post.title}</h1>
-          <p className="bg-blue-500">{post.body}</p>
-        </div>
+        <PostItem post={post} key={post.id} />
       ))}
     </div>
   );
