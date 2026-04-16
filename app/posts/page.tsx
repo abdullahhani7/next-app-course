@@ -2,7 +2,7 @@ import PostItem from "@/components/PostItem/PostItem";
 import { TPost } from "@/utils/types";
 
 const page = async () => {
-  const res = await fetch("https://dummyjson.com/posts");
+  const res = await fetch("https://dummyjson.com/posts", { cache: "no-store" });
   const posts = await res.json();
   console.log("posts", posts);
 

@@ -16,6 +16,9 @@ const Header = () => {
             <span className="text-2xl text-gray-600 font-bold">WEGO</span>
           </Link>
           <nav className="hidden md:flex space-x-5">
+            <Link className="text-gray-800 hover:text-blue-600" href={"/"}>
+              Home
+            </Link>
             <Link className="text-gray-800 hover:text-blue-600" href={"/posts"}>
               Posts
             </Link>
